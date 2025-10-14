@@ -27,6 +27,7 @@
     
     <h2>Thoughts</h2>
     <p>I would love to hear your thoughts on what your favourite cars were and maybe share your own cars that you want!</p>
+<form method="POST" action="some-server">
     <fieldset>
         <legend>Personal Information</legend>
         <label for="name">Name (required): </label>
@@ -73,5 +74,21 @@
         <label for="hard-work">The hard work put into this amazing website</label>
         
     </fieldset>
+    <fieldset>
+        <legend>Rating</legend>
+        <label for="website">How was the website?</label>
+        <select name="website" id="website">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+        </select>
+    </fieldset>
+    <label for="comments">Other Comments?</label>
+    <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+
+    <button type="submit">Submit</button>
+</form>
 </body>
 </html>
